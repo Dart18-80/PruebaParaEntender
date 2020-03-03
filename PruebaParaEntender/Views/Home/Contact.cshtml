@@ -9,8 +9,14 @@
             <input type="submit" value="Buscar" />
         </div>
     }
+    @using (Html.BeginForm("Eliminar", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="text-center">
+            <input type="text" class=" form-control" name="Nombre" placeholder="Introducir Nombre" />
+            <input type="submit" value="Eliminar" />
+        </div>
+    }
     <div>
         <h3>@ViewBag.MyMessage</h3>
     </div>
 </div>
-
