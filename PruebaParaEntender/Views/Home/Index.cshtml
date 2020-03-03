@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="text-center">
+    <p>Ingresar el archivo CSV </p>
+    @using (Html.BeginForm("About", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="Archivo" />
+        <input type="submit" value=" Importar" />
+    }
+</div>
